@@ -238,7 +238,7 @@
     ) .
 
 :DistributionShape a sh:NodeShape ;
-    sh:targetClass dcat:DistributionShape ;
+    sh:targetClass dcat:Distribution ;
     sh:property [
         sh:path dct:title ;
         sh:datatype xsd:string ;
@@ -288,7 +288,7 @@
                 sh:maxCount 1 ;
             ] , [
                 sh:path dcat:byteSize ;
-                sh:datatype xsd:something ;
+                sh:datatype xsd:decimal ;
                 sh:minCount 1 ;
                 sh:maxCount 1 ;
             ] , [
