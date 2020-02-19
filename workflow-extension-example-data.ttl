@@ -1,0 +1,36 @@
+@prefic dct: <http://purl.org/dc/terms/> .
+@prefix wfx: <http://example.com/workflow/extension#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+wfx:hasWorkflow rdfs:subPropertyOf dct:hasPart .
+
+:myWorkflow a wfx:Workflow ;
+    # dcat:Resource
+    dct:accessRights <> ;
+    dct:conformsTo <workflow-extension-shapes.ttl#WorkflowShape> ;
+    dcat:contactPoint <> ;
+    dct:creator <> ;
+    dct:description "" ;
+    dct:title "" ;
+    dct:issued "2020-02-19T00:00:00+01:00"^^xsd:dateTime ;
+    dct:modified "2020-02-19T00:00:00+01:00"^^xsd:dateTime ;
+    dct:language <> ;
+    dct:publisher <> ;
+    dct:identifier "" ;
+    dct:theme <> ;
+    dct:type <> ;
+    dct:relation <?> ;
+    dct:qualifiedRelation <?> ;
+    dct:keyword "" ;
+    dct:landingPage <> ;
+    prov:qualifiedAttribution <> ;
+    dct:license <> ;
+    dct:rights <> ;
+    odrl:hasPolicy <> ;
+    dct:isReferencedBy <> ;
+    #  WorkflowShape
+    wfx:subComponent :sub1 .
+
+:sub1 a wfx:Subcomponent ;
+    dct:conformsTo <workflow-extension-shapes.ttl#SubcomponentShape> ;
+    wfx:workflowDescription <http://example.com/workflow/sub/1/description> .

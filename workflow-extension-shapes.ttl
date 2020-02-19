@@ -1,0 +1,19 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix wfx: <http://example.com/workflow/extension#> .
+
+:WorkflowShape a sh:NodeShape ;
+    sh:targetClass wfx:Workflow ;
+    sh:and (
+        <dcat-v2-shapes.ttl#ResourceShape>
+        [
+            sh:path wfx:subComponent ;
+            sh:node :WorkflowSubcomponent ;
+        ]
+    ) .
+
+:SubcomponentShape a sh:NodeShape ;
+    sh:targetClass wfx:Subcomponent ;
+    sh:property [
+        sh:path wfx:workflowDescription ;
+        sh:nodeKind sh:IRI ;
+    ] .
