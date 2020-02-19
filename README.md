@@ -13,4 +13,4 @@ WIP repository for a dcat2 based FDP metadata model.
 
 ## Extensions
 - Mocked a 'workflow' type extension in [shape definitions](workflow-extension-shapes.ttl) and [example instance data](workflow-extension-example-data.ttl).
-- Example data [workflow-extension-example-data.ttl#L5](restates) the subproperty nature of the linking predicate between a `dcat:Catalog` and a `wfx:Workflow`.
+- Example data [restates](workflow-extension-example-data.ttl#L5) the subproperty nature of the linking predicate between a `dcat:Catalog` and a `wfx:Workflow`.
