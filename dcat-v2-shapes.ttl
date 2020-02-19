@@ -109,6 +109,10 @@
         sh:maxCount 1 ;
     ] .
 
+:RepositoryShape a sh:NodeShape ;
+    sh:targetClass r3d:Repository ;
+    sh:and ( :ResourceShape r3d:RepositoryShape ) .
+
 :DatasetShape a sh:NodeShape ;
     sh:targetClass dcat:Dataset ;
     sh:and (

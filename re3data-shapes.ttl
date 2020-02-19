@@ -1,0 +1,109 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix r3d: <http://www.re3data.org/schema/3-0#> .
+@prefix r3dvoc: <http://www.re3data.org/vocab/> .
+@prefix lvont: <http://lexvo.org/ontology#> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix r3common: <http://www.re3data.org/vocab/common#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:RepositoryShape a sh:NodeShape ;
+    sh:targetClass r3d:Repository ;
+    sh:property [
+        sh:path r3d:publicationSupport ;
+        sh:class r3d:PublicationSupport ;
+    ] , [
+        sh:path r3d:dataAccess ;
+        sh:class r3d:Access ;
+    ], [
+        sh:path r3d:dataUpload ;
+        sh:class r3d:Access ;
+    ] , [
+        sh:path r3d:databaseAccess ;
+        sh:class r3d:Access ;
+    ], [
+        sh:path r3d:dataLicense ;
+        sh:class r3d:License ;
+    ], [
+        sh:path r3d:dataUploadLicense ;
+        sh:class r3d:License ;
+    ], [
+        sh:path r3d:databaseLicense ;
+        sh:class r3d:License ;
+    ], [
+        sh:path r3d:policy ;
+        sh:class r3d:Policy ;
+    ], [
+        sh:path r3d:api ;
+        sh:class r3d:Api ;
+    ], [
+        sh:path r3d:metadataStandard ;
+        sh:class foaf:Document ;
+    ], [
+        sh:path r3d:certificate ;
+        sh:class foaf:Document ;
+    ], [
+        sh:path r3d:syndication ;
+        sh:class r3d:ReferenceDocument ;
+    ], [
+        sh:path r3d:repositoryType ;
+        sh:class r3voc:RepositoryType ;
+    ], [
+        sh:path r3d:providerType ;
+        sh:class r3dvoc:ProviderType ;
+    ], [
+        sh:path r3d:repositoryLanguage ;
+        sh:class lvont:Language ;
+    ], [
+        sh:path r3d:contentType ;
+        sh:class r3voc:ContentType ;
+    ], [
+        sh:path r3d:re3data ;
+        sh:class datacite:Identifier ;
+    ], [
+        sh:path r3d:subject ;
+        sh:class r3common:ClassificationIdentifier ;
+    ], [
+        sh:path r3d:doi ;
+        sh:class datacite:Identifier ;
+    ], [
+        sh:path r3d:repositoryIdentifier ;
+        sh:class datacite:Identifier ;
+    ], [
+        sh:path r3d:repositoryPost ;
+        sh:class org:Post ;
+    ], [
+        sh:path r3d:institution ;
+        sh:class r3d:Institution ;
+    ], [
+        sh:path r3d:dataCatalog ;
+        sh:class dcat:Catalog ;
+    ], [
+        sh:path r3d:startDate ;
+        sh:datatype xsd:date ;
+    ], [
+        sh:path r3d:entryDate ;
+        sh:datatype xsd:date ;
+    ], [
+        sh:path r3d:closed ;
+        sh:datatype xsd:date ;
+    ], [
+        sh:path r3d:offline ;
+        sh:datatype xsd:date ;
+    ], [
+        sh:path r3d:metrics ;
+        sh:nodeKind sh:Literal ;
+    ], [
+        sh:path r3d:size ;
+        sh:nodeKind sh:Literal ;
+    ], [
+        sh:path r3d:software ;
+        sh:nodeKind sh:Literal ;
+    ], [
+        sh:path r3d:hasVersioning ;
+        sh:datatype xsd:boolean ;
+    ], [
+        sh:path r3d:hasQualityManagement ;
+        sh:datatype xsd:boolean ;
+    ] .
