@@ -8,6 +8,7 @@ WIP repository for a dcat2 based FDP metadata model.
 - `dcat:Relationship` could be [used](https://www.w3.org/TR/vocab-dcat-2/#qualified-relationship) to define the relation between the (to be defined) `:RepositoryShape` resource and a `dcat:Catalog`.
   - Nonsensical draft of the `dcat:Relation` in [`example-data.ttl`](example-data.ttl#L39-L43).
 - Can we call this a [DCAT Profile](https://www.w3.org/TR/vocab-dcat-2/#profiles)?
+  - Could use [`dx-prof`](https://www.w3.org/TR/dx-prof/) to describe the profile?
 - Rough draft of a re3data `Repository` shape, based on [re3data/ontology](https://github.com/re3data/ontology).
 - [`example-data.ttl`](example-data.ttl) contains example instance data with _all_ possible properties.
 
