@@ -249,7 +249,7 @@
         sh:uniqueLang true ;
     ] , [
         sh:path dct:description ;
-        sh:nodeKind sh:Literal
+        sh:nodeKind sh:Literal ;
         sh:uniqueLang true ;
     ] , [
         sh:path dct:issued ;
