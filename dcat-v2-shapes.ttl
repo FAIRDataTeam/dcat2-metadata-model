@@ -111,7 +111,7 @@
 
 :RepositoryShape a sh:NodeShape ;
     sh:targetClass r3d:Repository ;
-    sh:and ( :ResourceShape r3d:RepositoryShape ) .
+    sh:and ( :ResourceShape <re3data-shapes.ttl#RepositoryShape> ) .
 
 :DatasetShape a sh:NodeShape ;
     sh:targetClass dcat:Dataset ;
