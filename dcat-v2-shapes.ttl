@@ -8,6 +8,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix r3d: <http://www.re3data.org/schema/3-0#> .
 
 :ResourceShape a sh:NodeShape ;
     sh:targetClass dcat:Resource ;
@@ -224,7 +225,7 @@
 :DataServiceShape a sh:NodeShape ;
     sh:targetClass dcat:DataService ;
     sh:and (
-        :ResourceShape ;
+        :ResourceShape
         [
             sh:path dcat:endpointURL ;
             sh:nodeKind sh:IRI ;

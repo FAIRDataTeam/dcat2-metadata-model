@@ -12,7 +12,7 @@
 :repository a r3d:Repository ;
     # dcat:Resource
     dct:accessRights <> ;
-    dct:conformsTo <dcat-v2-shapes.ttl#RepositoryShape> ;
+    dct:conformsTo <fair-metadata-ap.ttl> ;
     dcat:contactPoint <> ;
     dct:creator <> ;
     dct:description "" ;
@@ -45,7 +45,7 @@
 :catalog1 a dcat:Catalog ;
     # dcat:Resource
     dct:accessRights <> ;
-    dct:conformsTo <dcat-v2-shapes.ttl#CatalogShape> ;
+    dct:conformsTo <fair-metadata-ap.ttl> ;
     dcat:contactPoint <> ;
     dct:creator <> ;
     dct:description "" ;
@@ -86,7 +86,7 @@
 :dataset1 a dcat:Dataset ;
     # dcat:Resource
     dct:accessRights <> ;
-    dct:conformsTo <dcat-v2-shapes.ttl#DatasetShape> ;
+    dct:conformsTo <fair-metadata-ap.ttl> ;
     dcat:contactPoint <> ;
     dct:creator <> ;
     dct:description "" ;
@@ -130,14 +130,14 @@
     dcat:accessService :service1 ;
     dcat:spatialResoltionInMeters 1 ;
     dcat:temporalResolution ""^^xsd:duration ;
-    dct:conformsTo <dcat-v2-shapes.ttl#DistributionShape> ;
+    dct:conformsTo <fair-metadata-ap.ttl> ;
     dcat:mediaType <> ;
     dct:format <> .
 
 :service1 a dcat:DataService ;
     # dcat:Resource
     dct:accessRights <> ;
-    dct:conformsTo <dcat-v2-shapes.ttl#DataServiceShape> ;
+    dct:conformsTo <fair-metadata-ap.ttl> ;
     dcat:contactPoint <> ;
     dct:creator <> ;
     dct:description "" ;

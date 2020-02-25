@@ -1,4 +1,4 @@
-@prefic dct: <http://purl.org/dc/terms/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix wfx: <http://example.com/workflow/extension#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
@@ -7,7 +7,7 @@ wfx:hasWorkflow rdfs:subPropertyOf dct:hasPart .
 :myWorkflow a wfx:Workflow ;
     # dcat:Resource
     dct:accessRights <> ;
-    dct:conformsTo <workflow-extension-shapes.ttl#WorkflowShape> ;
+    dct:conformsTo <wf-ext-ap.ttl> ;
     dcat:contactPoint <> ;
     dct:creator <> ;
     dct:description "" ;
@@ -32,5 +32,5 @@ wfx:hasWorkflow rdfs:subPropertyOf dct:hasPart .
     wfx:subComponent :sub1 .
 
 :sub1 a wfx:Subcomponent ;
-    dct:conformsTo <workflow-extension-shapes.ttl#SubcomponentShape> ;
+    dct:conformsTo <wf-ext-ap.ttl> ;
     wfx:workflowDescription <http://example.com/workflow/sub/1/description> .

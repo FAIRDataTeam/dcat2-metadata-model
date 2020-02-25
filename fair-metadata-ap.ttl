@@ -1,0 +1,25 @@
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix role: <http://www.w3.org/ns/dx/prof/role/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<> a prof:Profile ;
+    rdfs:label "FAIR Metadata Profile" ;
+    rdfs:comment """FAIR metadata profile, extending DCAT2""" ;
+    prof:isProfileOf <http://www.w3.org/ns/dcat> ;
+    prof:hasResource [
+        a prof:ResourceDescriptor ;
+        rdfs:label "Profile Specification" ;
+        dct:format <https://w3id.org/mediatype/text/html> ;
+        prof:hasRole role:Specification ;
+        prof:hasArtefact <http://example.com/fair/TR/> 
+    ] ;
+    prof:hasResource [
+        a prof:ResourceDescriptor ;
+        rdfs:label "Constraints in SHACL" ;
+        dct:format <https://w3id.org/mediatype/text/turtle> ;
+        dct:conformsTo <https://www.w3.org/TR/shacl/> ;
+        prof:hasRole role:Constraints ;
+        prof:hasArtifact <dcat-v2-shapes.ttl>
+    ] ;
+    prof:hasToken "fair-metadata-ap" .
