@@ -13,6 +13,6 @@
         dct:format <https://w3id.org/mediatype/text/turtle> ;
         dct:conformsTo <https://www.w3.org/TR/shacl/> ;
         prof:hasRole role:Constraints ;
-        prof:hasArtifact <wf-ext-shapes.ttl>
+        prof:hasArtifact <rough-examples/wf-ext-shapes.ttl>
     ] ;
     prof:hasToken "wf-ext-ap" .

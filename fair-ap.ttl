@@ -20,6 +20,6 @@
         dct:format <https://w3id.org/mediatype/text/turtle> ;
         dct:conformsTo <https://www.w3.org/TR/shacl/> ;
         prof:hasRole role:Constraints ;
-        prof:hasArtifact <dcat-v2-shapes.ttl>
+        prof:hasArtifact <rough-examples/dcat-v2-shapes.ttl>
     ] ;
     prof:hasToken "fair-metadata-ap" .

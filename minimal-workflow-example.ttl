@@ -1,0 +1,24 @@
+@prefix r3d: <http://www.re3data.org/schema/3-0#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix wfx: <http://example.com/extensions/workflow#> .
+
+:repo a r3d:Repository, dcat:Resource ;
+    dct:conformsTo <fair-ap> ;
+    # ...
+    r3d:dataCatalog :catalog .
+
+:catalog a dcat:Catalog ;
+    dct:conformsTo <fair-ap> ;
+    # ...
+    wfx:hasWorkflow :workflow .
+
+:workflow a wfx:Workflow ;
+    dct:conformsTo <wf-ext-ap> ;
+    # ...
+    wfx:subcomponent :subcomponent .
+
+:subcomponent a wfx:Subcomponent ;
+    dct:conformsTo <wf-ext-ap> ;
+    # ...
+    wfx:hasDescription <...> .

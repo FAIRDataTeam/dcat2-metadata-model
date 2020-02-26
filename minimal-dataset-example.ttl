@@ -1,0 +1,23 @@
+@prefix r3d: <http://www.re3data.org/schema/3-0#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+:repo a r3d:Repository, dcat:Resource ;
+    dct:conformsTo <fair-ap> ;
+    # ...
+    r3d:dataCatalog :catalog .
+
+:catalog a dcat:Catalog ;
+    dct:conformsTo <fair-ap> ;
+    # ...
+    dcat:dataset :dataset .
+
+:dataset a dcat:Dataset ;
+    dct:conformsTo <fair-ap> ;
+    # ...
+    dcat:distribution :distribution .
+
+:distribution a dcat:Distribution ;
+    dct:conformsTo <fair-ap> ;
+    # ...
+    dcat:downloadURL <...> .
