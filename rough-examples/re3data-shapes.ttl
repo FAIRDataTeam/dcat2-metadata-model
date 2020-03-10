@@ -1,6 +1,6 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix r3d: <http://www.re3data.org/schema/3-0#> .
-@prefix r3dvoc: <http://www.re3data.org/vocab/> .
+@prefix r3voc: <http://www.re3data.org/vocab/> .
 @prefix lvont: <http://lexvo.org/ontology#> .
 @prefix datacite: <http://purl.org/spar/datacite/> .
 @prefix r3common: <http://www.re3data.org/vocab/common#> .
@@ -51,7 +51,7 @@
         sh:class r3voc:RepositoryType ;
     ], [
         sh:path r3d:providerType ;
-        sh:class r3dvoc:ProviderType ;
+        sh:class r3voc:ProviderType ;
     ], [
         sh:path r3d:repositoryLanguage ;
         sh:class lvont:Language ;
