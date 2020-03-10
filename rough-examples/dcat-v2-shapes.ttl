@@ -149,6 +149,11 @@
             sh:path prov:wasGeneratedBy ;
             sh:class prov:Activity ;
         ]
+        [
+            sh:path dct:isPartOf ;
+            sh:nodeKind sh:IRI ;
+            sh:minCount 1 ;
+        ]
     ) .
 
 :CatalogShape a sh:NodeShape ;
@@ -332,6 +337,10 @@
         sh:path dct:format ;
         sh:class dct:MediaTypeOrExtent ;
         sh:maxCount 1 ;
+    ], [
+        sh:path dct:isPartOf ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
     ] .
 
 :AgentShape a sh:NodeShape ;
